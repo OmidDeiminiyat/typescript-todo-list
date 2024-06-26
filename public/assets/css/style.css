@@ -1,0 +1,82 @@
+
+#list {
+  list-style: none;
+  padding: 0;
+}
+body{
+  background-color: rgba(227, 231, 235, 0.888);
+}
+#primary-img{
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+#primary-img img {
+  width: 100%;
+}
+#new-task-form, #list {
+  display: block;
+}
+.article header{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 24px;
+}
+article p{
+  text-align: center;
+  width: 60%;
+  margin-left: 20%;
+}
+article button{
+  width: 50%;
+  margin-left: 25%;
+  height: 30px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(98, 0, 255);
+  color: white;
+  cursor: pointer;
+}
+article button a{
+  color: white;
+  text-decoration: none;
+}
+
+#new-task-form, #list{
+    display: none;
+}
+
+
+#new-task-form {
+    width: 80%;
+    margin-left: 10%;
+}
+ input{
+    width: 60%;
+    margin: 6%  0 0 20%;
+}
+
+#list{
+    width: 60%;
+    margin-left: 20%;
+}
+#list div{
+    display: grid;
+   margin-top: 20px;
+   padding: 0;
+   width: 100%;
+   height: 30px;
+  
+}
+#list div li{
+    background-color: rgba(98, 0, 255, 0.534);
+    border-radius: 30px;
+}
+#list div input {
+    width: 30px;
+    padding: 0;
+   margin: 10px 0 0 3px;
+}
+
+

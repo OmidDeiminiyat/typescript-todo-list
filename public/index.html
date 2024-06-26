@@ -5,19 +5,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="dist/index.js" type="module"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Document</title>
-  <style>
-    #list {
-      list-style: none;
-      padding: 0;
-    }
-  </style>
+
 </head>
 <body>
-  <ul id="list"></ul>
+  <section id="firstPage" >
+      <figure id="primary-img">
+          <img src="joblist.png" alt="">
+      </figure>
+      <article class="article">
+        <header>
+          <h1>Task Managment & <br> To-Do List</h1>
+        </header>
+        <p>Feeling overwhelmed? Get things done with ease! Our to-do app helps you conquer your day by keeping track of tasks, setting reminders, and boosting productivity.
+        </p>
+        <button id="tests"> Let's start </button>
+      </article>
+  </section>
   <form id="new-task-form">
     <input type="text" id="new-task-title">
-    <button type="submit">Add</button>
+    <button>Add</button>
   </form>
+
+  <ul id="list"></ul>
+
 </body>
 </html>
