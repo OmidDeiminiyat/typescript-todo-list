@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="dist/index.js" type="module"></script>
   <link rel="stylesheet" href="assets/css/style.css">
-  <title>Document</title>
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>To do list</title>
 </head>
 <body>
   <section id="firstPage" >
@@ -20,15 +20,56 @@
         </header>
         <p>Feeling overwhelmed? Get things done with ease! Our to-do app helps you conquer your day by keeping track of tasks, setting reminders, and boosting productivity.
         </p>
-        <button id="tests"> Let's start </button>
+        <button > Let's start </button>
       </article>
   </section>
-  <form id="new-task-form">
-    <input type="text" id="new-task-title">
-    <button>Add</button>
+  <section id="insertToDo">
+    <h1>Add project</h1>
+  <form id="todoForm">
+      <div>
+        <label for="category">Project name:</label>
+        <input type="textarea" id="name" >
+      </div>
+      <div>
+          <label for="category">Choose a category:</label>
+          <select id="category">
+            <option value="Office">Office task</option>
+            <option value="Personal">Personal task</option>
+            <option value="daily">Daily</option>
+          </select>
+      </div>
+      <div>
+          <label for="date">Choos date</label>
+          <input type="date" id="date">
+      </div>
+
+      <input type="text" id="todoInput" placeholder="Describe" required>
+
+      <button type="submit">Add Task</button>
+
   </form>
+  </section>
+  <ul id="todoList"></ul>
 
-  <ul id="list"></ul>
+  <section id="message">
+    <div>
+      <h1>Project has been added</h1>
+    </div>
+  </section>
 
+  <footer>
+    <section class="elements" >
+      <span id="Home"  class="material-symbols-outlined">
+        home
+      </span>
+      <span id="tests" class="material-symbols-outlined">
+        add
+      </span>
+      <span id="AllLists" class="material-symbols-outlined">
+        library_books
+      </span>
+    </section>
+  </footer>
+ 
 </body>
 </html>
