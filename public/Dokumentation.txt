@@ -1,0 +1,56 @@
+Denne rapport handler om de trin, der er involveret i at oprette en To-Do-APP, som jeg programmerede ved hjælp af TypeScript.
+
+Nøglefunktioner og funktionalitet
+Tilføj opgave: Brugere kan indtaste en opgave og tilføje den til listen. Hver opgave tildeles et unikt ID og gemmes i lokal hukommelse.
+Vis opgaver: Når siden er indlæst, vises de opgaver, der er gemt i den lokale hukommelse, på en liste.
+Slet opgave: Hver opgave har en slet-knap. Når du klikker på den, fjernes opgaven fra den lokale hukommelse og DOM.
+Skift opgave: Hver opgave har et afkrydsningsfelt for at markere den som udført eller ej. Denne tilstand er gemt i den lokale hukommelse.
+
+Mål
+De primære mål for dette projekt er:
+
+At skabe en brugervenlig grænseflade til håndtering af to-do-emner.
+For at gemme opgaveelementer i lokalt lager, hvilket sikrer vedholdenhed på tværs af sessioner.
+At implementere TypeScript for at forbedre kodekvalitet og vedligeholdelse.
+
+Værktøjer og teknologier
+TypeScript: Et stærkt indtastet programmeringssprog, der bygger på JavaScript.
+HTML/CSS: Til strukturering og styling af websiden.
+Lokal lagring: Til at fortsætte opgave-elementer mellem sessioner.
+JavaScript: Til dynamiske interaktioner på websiden.
+
+Project Lunch
+1. Setting up the development environment
+
+First, I installed Node.js and npm on the device. And I started a new Node.js project and installed TypeScript.
+
+2. Project structure
+I then created the following directory structure:
+/todo-list-app
+  |-- /public
+            |-- /assets
+                      |-- /css
+                              |-- style.css
+            |-- /image
+            index.html
+  |-- /src
+      |-- index.ts
+  |-- /type
+            |-- static.d.ts
+  |-- /dist
+
+  3. HTML structure
+  Derefter oprettede jeg en index.html-fil for at definere strukturen af to-do liste-programmet
+  4. Styling med CSS
+  Jeg oprettede en styles.css-fil for at tilføje grundlæggende stilarter
+ 
+  5. Skrevet kode
+  Jeg oprettede en index.ts-fil til at styre programlogikken
+ 
+  6. Kompiler TypeScript til JavaScript
+    Kommando NPX TSC kompilerer index.ts til index.js og placerer det i dist-mappen  som angivet i tsconfig.json-filen.
+
+
+Eventuelle forbedringer eller ønsker til teknologien
+
+TypeScript er en bredt anvendt teknologi på grund af dens evne til at levere statisk typekontrol, hvilket øger kodekvaliteten og vedligeholdelsesvenligheden. Der er dog én ting, jeg gerne vil påpege. Forøg typeslutningsevnen for at reducere behovet for eksplicitte typeannoteringer.
