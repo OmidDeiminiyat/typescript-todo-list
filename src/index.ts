@@ -86,10 +86,6 @@ document.addEventListener('DOMContentLoaded', function() {
     Newmessage.style.display = 'block';
   }
 
-
-
-
-
   // Function to display all tasks from local storage
   function displayTodos() {
       const storedTodos = JSON.parse(localStorage.getItem('todos')) || [];
@@ -98,16 +94,19 @@ document.addEventListener('DOMContentLoaded', function() {
           const li = document.createElement('li');
           li.className = 'todoItem';
           li.dataset.id = todo.id;
-          li.innerHTML = `<div> <span>${todo.newCategory}</span><h3>${todo.myProjects} </h3> 
-              <p>${todo.dato}</p></div>
+          li.innerHTML = `<div id="test" > <span>${todo.newCategory}</span><h3>${todo.myProjects} </h3> 
+              <p>${todo.dato}</p> </div>
               <div>
               <input type="checkbox" ${todo.checked ? 'checked' : ''}>
-              <span onclick="deleteTask('${todo.id}')" class="material-symbols-outlined"> delete</span>
+              <span onclick="deleteTask('${todo.id}')" class="material-symbols-outlined"> delete </span>
               </div>
           `;
           todoList.appendChild(li);
       });
   }
+
+
+ 
   // Function to delete task from local storage
   function deleteTask(id) {
       let storedTodos = JSON.parse(localStorage.getItem('todos')) || [];
@@ -115,6 +114,8 @@ document.addEventListener('DOMContentLoaded', function() {
       localStorage.setItem('todos', JSON.stringify(storedTodos));
       displayTodos();
   }
+
+  
 
   // Event listener for form submission
   todoForm.addEventListener('submit', function(event) {
@@ -133,6 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   window.deleteTask = deleteTask;
 });
+
 
 function countLocalStorageItems(key) {
   // Get the value from localStorage
@@ -157,7 +159,7 @@ function countLocalStorageItems(key) {
   }
 }
 
-// Example usage:
+
 const itemCount = countLocalStorageItems("todos");
 console.log("Number of items in localStorage with key 'todos':", itemCount);
 
